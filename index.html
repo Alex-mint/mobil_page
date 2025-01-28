@@ -52,6 +52,9 @@
         // Получаем символ из параметра 'param1'
         const symbol = getQueryParam('param1') || 'ETHUSDT'; // По умолчанию ETHUSDT, если параметр не передан
 
+        // Устанавливаем заголовок страницы
+        document.title = `${symbol}`; // Например, "BTCUSDT Chart"
+
         // Ожидаем загрузки DOM
         document.addEventListener('DOMContentLoaded', function () {
             // Находим скрипт виджета
